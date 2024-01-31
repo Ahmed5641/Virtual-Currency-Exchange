@@ -3,6 +3,13 @@ A Flask-based virtual currency exchange platform for the IST303 course:
 
 ![78](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/f92fe1c5-eb96-4bd4-8883-fe53ffe8bdc4)
 
+# Group 4:
+<li>Ahmed</li>
+<li>Ameya</li>
+<li>Clement</li>
+<li>Divya</li>
+
+
 # Objective:
 To create a web-based platform where users can simulate the experience of trading virtual currencies. The application will provide functionalities for currency conversion, tracking currency values, and managing virtual portfolios.
 
@@ -58,3 +65,26 @@ To create a web-based platform where users can simulate the experience of tradin
 7. As a user, I want to see the current value of my portfolio, so that I know the performance of my investments.
 8. As a user, I want to be able to communicate with other users.
 9. As a user, I want the website to be easy to access and navigate.
+
+# User Stories Completion Estimations:
+### User Account Registration and Login System:
+##### Estimated Time: 1 Week
+
+### View Real-Time Currency Exchange Rates:
+##### Estimated Time: 4 - 5 days
+
+### Buy and Sell Virtual Currencies (Simulation):
+##### Estimated Time: 4 - 5 weeks
+
+### View Transaction History:
+##### Estimated Time: 4 - 5 days
+
+### User Portfolio Value and Dashboard:
+##### Estimated Time: 1 weeks
+
+### Responsive Web-Application Design:
+#### Estimated Time: 1 week
+
+### Bug Identification and Testing:
+#### Estimated Time: 1 week
+
