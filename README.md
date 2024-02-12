@@ -56,33 +56,89 @@ To create a web-based platform where users can simulate the experience of tradin
 7. pytest
 
 # User Stories:
-1. As a user, I want to be able to register an account.
-2. As a user, I want to be able to log in to my account so that I can securely access my portfolio.
-3. As a user, I want to have a user dashboard that contains my information.
+1. As a user, I want to be able to register an account using my email and password.
+2. As a user, I want to be able to log in to my account using my email and password to access my dashboard.
+3. As a logged-in user, I want to access a dashboard that shows an overview of my account.
 4. As a user, I want to view real-time currency exchange rates to make informed trading decisions.
-5. As a user, I want to be able to buy virtual currencies.
-6. As a user, I want to be able to sell virtual currencies.
+5. As a user, I want to be able to buy virtual currencies at the current market rate.
+6. As a user, I want to be able to sell virtual currencies at the current market rate.
 7. As a user, I want to view my transaction history to track my past activities.
 8. As a user, I want to see the current value of my portfolio, so that I know the performance of my investments.
 9. As a user, I want to be able to communicate with other users.
 
 # User Stories Completion Estimations:
 ### User Account Registration and Login System:
-##### Estimated Time: 5 - 6 days
+  ##### Estimated Time: 5 - 6 days
 
 ### View Real-Time Currency Exchange Rates:
-##### Estimated Time: 4 - 5 days
+  ##### Estimated Time: 4 - 5 days
 
 ### Buy Virtual Currencies (Simulation):
-##### Estimated Time: 1 week
+  ##### Estimated Time: 1 week
 
 ### Sell Virtual Currencies (Simulation):
-##### Estimated Time: 4 - 5 days
+  ##### Estimated Time: 4 - 5 days
 
 ### View Transaction History:
-##### Estimated Time: 4 - 5 days
+  ##### Estimated Time: 4 - 5 days
 
 ### User Portfolio Value and Dashboard:
-##### Estimated Time: 1 week
+  ##### Estimated Time: 1 week
+
+### User communication forum:
+  ##### Estimated Time: 1 week
+
+# Revised User Stories with Decomposed Tasks:
+### 1. Register an Account:
+#### Tasks:
+   1. Designing database schema for user information.
+   2. Creating a registration form (User Interface).
+   3. Developing server-side logic to store user credentials securely.
+
+### 2. Log in to Account:
+#### Tasks:
+   1. Designing and implementing login UI.
+   2. Developing backend logic authentication for session management and password handling.
+   3. Implementing password recovery mechanism.
+
+### 3. User Dashboard Access:
+#### Tasks:
+   1. Designing the layout of the user dashboard.
+   2. Implementing backend logic to retrieve and fetch user data.
+   3. Implementing frontend components to display user information.
+   4. Developing a mechanism for editing user information.
+
+### 4. View Real-time Currency Exchange Rates:
+#### Tasks:
+   1. Integrating a third-party API for fetching real-time currency exchange rates.
+   2. Designing UI components to display the rates.
+
+### 5. Buy Virtual Currencies:
+#### Tasks:
+   1. Designing a trading interface for a purchase form.
+   2. Implement purchase transactions including validations.
+
+### 6. Sell Virtual Currencies:
+#### Tasks:
+   1. Designing a trading interface for a sell form.
+   2. Implement sell transactions including validations.
+
+### 7. View Transaction History:
+#### Tasks:
+   1. Designing a page to list transactions.
+   2. Implementing backend logic to retrieve transaction data.
+
+### 8. View Portfolio Value:
+#### Tasks:
+   1. Designing UI to display portfolio value.
+   2. Integrating portfolio value into the user dashboard.
+
+### 9. Communicate with Other Users:
+#### Tasks:
+   1. Designing and implementing a messaging or forum feature.
+
+ 
+   
+
 
 
