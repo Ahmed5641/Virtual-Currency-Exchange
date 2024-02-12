@@ -59,32 +59,30 @@ To create a web-based platform where users can simulate the experience of tradin
 1. As a user, I want to be able to register an account.
 2. As a user, I want to be able to log in to my account so that I can securely access my portfolio.
 3. As a user, I want to have a user dashboard that contains my information.
-4. As a user, I want to view real-time currency exchange rates, so that I can make informed trading decisions.
-5. As a user, I want to buy and sell virtual currencies, so that I can simulate trading.
-6. As a user, I want to view my transaction history, so that I can track my past activities.
-7. As a user, I want to see the current value of my portfolio, so that I know the performance of my investments.
-8. As a user, I want to be able to communicate with other users.
-9. As a user, I want the website to be easy to access and navigate.
+4. As a user, I want to view real-time currency exchange rates to make informed trading decisions.
+5. As a user, I want to be able to buy virtual currencies.
+6. As a user, I want to be able to sell virtual currencies.
+7. As a user, I want to view my transaction history to track my past activities.
+8. As a user, I want to see the current value of my portfolio, so that I know the performance of my investments.
+9. As a user, I want to be able to communicate with other users.
 
 # User Stories Completion Estimations:
 ### User Account Registration and Login System:
-##### Estimated Time: 1 Week
+##### Estimated Time: 5 - 6 days
 
 ### View Real-Time Currency Exchange Rates:
 ##### Estimated Time: 4 - 5 days
 
-### Buy and Sell Virtual Currencies (Simulation):
-##### Estimated Time: 4 - 5 weeks
+### Buy Virtual Currencies (Simulation):
+##### Estimated Time: 1 week
+
+### Sell Virtual Currencies (Simulation):
+##### Estimated Time: 4 - 5 days
 
 ### View Transaction History:
 ##### Estimated Time: 4 - 5 days
 
 ### User Portfolio Value and Dashboard:
-##### Estimated Time: 1 weeks
+##### Estimated Time: 1 week
 
-### Responsive Web-Application Design:
-#### Estimated Time: 1 week
-
-### Bug Identification and Testing:
-#### Estimated Time: 1 week
 
