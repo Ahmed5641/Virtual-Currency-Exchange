@@ -137,7 +137,30 @@ To create a web-based platform where users can simulate the experience of tradin
 #### Tasks:
    1. Designing and implementing a messaging or forum feature.
 
- 
+ # Milestone 1.0 Features:
+ ### 1. User Account Management:
+ #### - Registration: 
+   Users can create an account by providing their email and password.
+#### - Login: 
+   Users can log in to their accounts using their credentials.
+#### - Dashboard Access: 
+   Upon login, users are directed to their dashboard, displaying an overview of their account.
+
+### 2. Real-time Currency Exchange Rates:
+#### - Exchange Rate Viewing: 
+   Users can view real-time exchange rates for various virtual currencies.
+
+### 3. Basic Trading Functionality:
+#### - Buying Virtual Currencies: 
+   Users can buy virtual currencies at current market rates. This involves selecting a currency, specifying the amount, and executing the purchase.
+#### - Selling Virtual Currencies: 
+   Users can sell virtual currencies they own, based on current market rates.
+
+### 4. Transaction History:
+#### - Viewing Transaction History: 
+   Users can view a list of their past transactions, including both buys and sells, to track their activity on the platform.
+
+
    
 
 
