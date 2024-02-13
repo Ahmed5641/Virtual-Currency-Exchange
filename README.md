@@ -156,18 +156,16 @@ To create a web-based platform where users can simulate the experience of tradin
 #### - Selling Virtual Currencies: 
    Users can sell virtual currencies they own, based on current market rates.
 
-### 4. Transaction History:
-#### - Viewing Transaction History: 
-   Users can view a list of their past transactions, including both buys and sells, to track their activity on the platform.
 
 # Milestone 1.0
 ## Total Allocation:
 ### Total: 23 days (until 03/06/2024 when Milestone 1 is due)
 #### User Account Management and Dashboard: 11 days.
-#### Currency Data and Trading: 12 days.
+#### Real-time Data and Basic Trading Functionality: 12 days.
 
 ## Iteration 1: User Account Management and Dashboard:
 #### Duration: 11 workdays
+
 11 working days (60% velocity) Days of actual work: 4 (Four Team Members) * 11 * 0.60 = 26 Days
 #### 1. User Registration: 9 days
 Designing and implementing the registration form and backend logic. (Ameya, Divya)
@@ -179,6 +177,25 @@ Implementing login functionality with session management. (Ameya, Divya)
 Setting up a simple dashboard to display user profile information. (Ahmed, Clement)
 
 ![Iteration1](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/730a4ab6-e196-44e5-9c0a-f53db8449bb9)
+The Burndown Chart for iteration 1 will be updated regularly to show the actual work that has been done against the planned work.
+
+## Iteration 2: Real-time Data and Basic Trading Functionality:
+#### Duration: 12 workdays
+
+12 working days (60% velocity) Days of actual work: 4 (Four Team Members) * 12 * 0.60 = 29 Days
+#### 1. UI for data and trading functions: 4 days
+Users can access the trading form through their dashboard or main home page.
+#### 2. Real-time Currency Exchange Rates Viewing: 8 days
+Users can view real-time exchange rates for various virtual currencies through integrated API.
+#### 3. Buying Virtual Currencies: 9 days
+Users can buy virtual currencies at current market rates. This involves selecting a currency, specifying the amount, and executing the purchase.
+#### 4. Selling Virtual Currencies: 8 days
+users can sell virtual currencies they own, based on current market rates.
+
+![Iteration2](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/69fc5aa9-df39-42b0-a5d7-98976e65b425)
+The Burndown Chart for iteration 2 will be updated regularly to show the actual work that has been done against the planned work.
+
+
 
 
 
