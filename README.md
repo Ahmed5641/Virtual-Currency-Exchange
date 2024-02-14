@@ -73,10 +73,10 @@ To create a web-based platform where users can simulate the experience of tradin
 ### View Real-Time Currency Exchange Rates:
   ##### Estimated Time: 4 - 5 days
 
-### Buy Virtual Currencies (Simulation):
+### Buy Virtual Currencies:
   ##### Estimated Time: 1 week
 
-### Sell Virtual Currencies (Simulation):
+### Sell Virtual Currencies:
   ##### Estimated Time: 4 - 5 days
 
 ### View Transaction History:
@@ -185,13 +185,13 @@ The Burndown Chart for iteration 1 will be updated regularly to show the actual 
 
 12 working days (60% velocity) Days of actual work: 4 (Four Team Members) * 12 * 0.60 = 29 Days
 #### 1. UI for data and trading functions: 4 days
-Users can access the trading form through their dashboard or main home page.
+Users can access the trading form through their dashboard or main home page. (Divya, Clement)
 #### 2. Real-time Currency Exchange Rates Viewing: 8 days
-Users can view real-time exchange rates for various virtual currencies through integrated API.
+Users can view real-time exchange rates for various virtual currencies through integrated API. (Ahmed, Ameya)
 #### 3. Buying Virtual Currencies: 9 days
-Users can buy virtual currencies at current market rates. This involves selecting a currency, specifying the amount, and executing the purchase.
+Users can buy virtual currencies at current market rates. This involves selecting a currency, specifying the amount, and executing the purchase. (Ahmed, Ameya)
 #### 4. Selling Virtual Currencies: 8 days
-users can sell virtual currencies they own, based on current market rates.
+users can sell virtual currencies they own, based on current market rates. (Ahmed, Ameya)
 
 ![Iteration2](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/69fc5aa9-df39-42b0-a5d7-98976e65b425)
 The Burndown Chart for iteration 2 will be updated regularly to show the actual work that has been done against the planned work.
