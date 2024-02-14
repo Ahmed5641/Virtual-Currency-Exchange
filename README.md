@@ -155,6 +155,7 @@ To create a web-based platform where users can simulate the experience of tradin
    Users can buy virtual currencies at current market rates. This involves selecting a currency, specifying the amount, and executing the purchase.
 #### - Selling Virtual Currencies: 
    Users can sell virtual currencies they own, based on current market rates.
+   For Buying and Selling, Developing a chatroom where users can exchange cryptocurrency by engaging in chat, sharing insights, and securely posting and messaging their crypto wallet's public keys.
 
 
 # Milestone 1.0
