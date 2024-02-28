@@ -91,37 +91,37 @@ To create a web-based platform where users can simulate the experience of tradin
 # Revised User Stories with Decomposed Tasks:
 ### 1. Register an Account:
 #### Tasks:
-   1. Designing database schema for user information.
-   2. Creating a registration form (User Interface).
-   3. Developing server-side logic to store user credentials securely.
+   1. Designing database schema for user information. Ahmed
+   2. Creating a registration form (User Interface). Divya
+   3. Developing server-side logic to store user credentials securely. Ameya
 
 ### 2. Log in to Account:
 #### Tasks:
-   1. Designing and implementing login UI.
-   2. Developing backend logic authentication for session management and password handling.
-   3. Implementing password recovery mechanism.
+   1. Designing and implementing login UI. Divya
+   2. Developing backend logic authentication for session management and password handling. Clement
+   3. Implementing password recovery mechanism. Ameya
 
 ### 3. User Dashboard Access:
 #### Tasks:
-   1. Designing the layout of the user dashboard.
-   2. Implementing backend logic to retrieve and fetch user data.
-   3. Implementing frontend components to display user information.
-   4. Developing a mechanism for editing user information.
+   1. Designing the layout of the user dashboard. Clement
+   2. Implementing backend logic to retrieve and fetch user data. Ahmed
+   3. Implementing frontend components to display user information. Clement
+   4. Developing a mechanism for editing user information. Ahmed
 
 ### 4. View Real-time Currency Exchange Rates:
 #### Tasks:
-   1. Integrating a third-party API for fetching real-time currency exchange rates.
-   2. Designing UI components to display the rates.
+   1. Integrating a third-party API for fetching real-time currency exchange rates. Ameya
+   2. Designing UI components to display the rates. Ahmed
 
 ### 5. Buy Virtual Currencies:
 #### Tasks:
-   1. Designing a trading interface for a purchase form.
-   2. Implement purchase transactions including validations.
+   1. Designing a trading interface for a purchase form. Ahmed
+   2. Implement purchase transactions including validations. Ameya
 
 ### 6. Sell Virtual Currencies:
 #### Tasks:
-   1. Designing a trading interface for a sell form.
-   2. Implement sell transactions including validations.
+   1. Designing a trading interface for a sell form. Ahmed
+   2. Implement sell transactions including validations. Ameya
 
 ### 7. View Transaction History:
 #### Tasks:
