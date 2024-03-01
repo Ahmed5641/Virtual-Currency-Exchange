@@ -67,9 +67,12 @@ To create a web-based platform where users can simulate the experience of tradin
 9. As a user, I want to be able to communicate with other users.
 
 # User Stories Completion Estimations:
-### User Account Registration and Login System:
+### User Account Registration:
   ##### Estimated Time: 5 - 6 days
 
+### User Login System:
+  ##### Estimated Time: 5 - 6 days
+  
 ### View Real-Time Currency Exchange Rates:
   ##### Estimated Time: 4 - 5 days
 
@@ -177,7 +180,7 @@ Implementing login functionality with session management. (Ameya, Divya)
 #### 4. Basic Dashboard: 4 days
 Setting up a simple dashboard to display user profile information. (Ahmed, Clement)
 
-[Burndown Chart_iteration1.xlsx](https://github.com/Ahmed5641/Virtual-Currency-Exchange/files/14454816/Burndown.Chart_iteration1.xlsx)
+![Iteration1](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/ace14852-2704-4c74-89b3-6ec19b273e7a)
 
 The Burndown Chart for iteration 1 will be updated regularly to show the actual work that has been done against the planned work.
 
