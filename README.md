@@ -180,7 +180,7 @@ Implementing login functionality with session management. (Ameya, Divya)
 #### 4. Basic Dashboard: 4 days
 Setting up a simple dashboard to display user profile information. (Ahmed, Clement)
 
-![Iteration1](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/ace14852-2704-4c74-89b3-6ec19b273e7a)
+![Iteration1](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/2f0c2e56-e7ce-4b69-b202-56f192b6a17f)
 
 The Burndown Chart for iteration 1 will be updated regularly to show the actual work that has been done against the planned work.
 
