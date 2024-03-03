@@ -79,7 +79,7 @@ Ahmed, Ameya, Divya
 ### Day:
 Saturday
 ### Attendees:
-Ahmed, Ameya, Clement
+Ahmed, Divya, Clement
 ### Agenda:
 - We discussed the allocated tasks' progress with each team member.
 - We discussed the possibility of reducing the estimation times for each task.
