@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Dashboard</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<style>
+  /* Basic styles for layout */
+  body { font-family: Arial, sans-serif; }
+  #bitcoin-price { font-weight: bold; margin-bottom: 20px; }
+  #chat { margin-bottom: 20px; }
+  #messages { list-style-type: none; padding: 0; }
+  #messages li { padding: 5px 10px; border-bottom: 1px solid #ddd; }
+  #message { padding: 10px; margin-right: 10px; width: 80%; }
+  #send { padding: 10px; }
+</style>
 </head>
 <body>
-    <h2>Dashboard</h2>
-    <p>Welcome, {{ current_user.username }}!</p>
-    <a href="/logout">Logout</a>
+  <nav>
+    <a href="{{ url_for('dashboard') }}">Home</a>|
+    <a href="{{ url_for('profile') }}">My Profile</a>
+  </nav>
+  <div id="bitcoin-price">Bitcoin price: ${{ bitcoin_price }}</div>
+  <div id="chat">
+    <ul id="messages">
+      {% for message in messages %}
+        <li><strong>{{ message.username }}</strong>: {{ message.text }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <input type="text" id="message" autocomplete="off">
+  <button id="send" onclick="sendMessage()">Send</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+  <script>
+    var socket = io.connect('http://' + document.domain + ':' + location.port);
+    socket.on('connect', function() {
+      socket.emit('my event', {data: 'User Connected'});
+    });
+    var form = document.querySelector('form');
+    form.onsubmit = function(e) {
+      e.preventDefault();
+      var input = document.getElementById('message');
+      var text = input.value;
+      socket.emit('message', {text: text});
+      input.value = '';
+    };
+    socket.on('message', function(data) {
+      var messages = document.getElementById('messages');
+      var li = document.createElement('li');
+      li.innerHTML = '<strong>' + data.username + '</strong>: ' + data.text;
+      messages.appendChild(li);
+      window.scrollTo(0, document.body.scrollHeight);
+    });
+  </script>
 </body>
 </html>
+
+

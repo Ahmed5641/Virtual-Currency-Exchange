@@ -1,0 +1,74 @@
+/* styles.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  
+  .bitcoin-price {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .chat-container {
+    border: 1px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 300px;
+    overflow-y: scroll;
+  }
+  
+  .chat-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .chat-container ul li {
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .chat-form {
+    display: flex;
+  }
+  
+  .chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+  }
+  
+  .chat-send {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .chat-send:hover {
+    background-color: #333;
+  }
+  
+  /* Add responsiveness */
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 95%;
+      padding-top: 20px;
+    }
+  }
+  
