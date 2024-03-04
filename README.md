@@ -67,9 +67,12 @@ To create a web-based platform where users can simulate the experience of tradin
 9. As a user, I want to be able to communicate with other users.
 
 # User Stories Completion Estimations:
-### User Account Registration and Login System:
+### User Account Registration:
   ##### Estimated Time: 5 - 6 days
 
+### User Login System:
+  ##### Estimated Time: 5 - 6 days
+  
 ### View Real-Time Currency Exchange Rates:
   ##### Estimated Time: 4 - 5 days
 
@@ -91,37 +94,37 @@ To create a web-based platform where users can simulate the experience of tradin
 # Revised User Stories with Decomposed Tasks:
 ### 1. Register an Account:
 #### Tasks:
-   1. Designing database schema for user information.
-   2. Creating a registration form (User Interface).
-   3. Developing server-side logic to store user credentials securely.
+   1. Designing database schema for user information. Ahmed
+   2. Creating a registration form (User Interface). Divya
+   3. Developing server-side logic to store user credentials securely. Ameya
 
 ### 2. Log in to Account:
 #### Tasks:
-   1. Designing and implementing login UI.
-   2. Developing backend logic authentication for session management and password handling.
-   3. Implementing password recovery mechanism.
+   1. Designing and implementing login UI. Divya
+   2. Developing backend logic authentication for session management and password handling. Clement
+   3. Implementing password recovery mechanism. Ameya
 
 ### 3. User Dashboard Access:
 #### Tasks:
-   1. Designing the layout of the user dashboard.
-   2. Implementing backend logic to retrieve and fetch user data.
-   3. Implementing frontend components to display user information.
-   4. Developing a mechanism for editing user information.
+   1. Designing the layout of the user dashboard. Clement
+   2. Implementing backend logic to retrieve and fetch user data. Ahmed
+   3. Implementing frontend components to display user information. Clement
+   4. Developing a mechanism for editing user information. Ahmed
 
 ### 4. View Real-time Currency Exchange Rates:
 #### Tasks:
-   1. Integrating a third-party API for fetching real-time currency exchange rates.
-   2. Designing UI components to display the rates.
+   1. Integrating a third-party API for fetching real-time currency exchange rates. Ameya
+   2. Designing UI components to display the rates. Ahmed
 
 ### 5. Buy Virtual Currencies:
 #### Tasks:
-   1. Designing a trading interface for a purchase form.
-   2. Implement purchase transactions including validations.
+   1. Designing a trading interface for a purchase form. Ahmed
+   2. Implement purchase transactions including validations. Ameya
 
 ### 6. Sell Virtual Currencies:
 #### Tasks:
-   1. Designing a trading interface for a sell form.
-   2. Implement sell transactions including validations.
+   1. Designing a trading interface for a sell form. Ahmed
+   2. Implement sell transactions including validations. Ameya
 
 ### 7. View Transaction History:
 #### Tasks:
@@ -177,7 +180,7 @@ Implementing login functionality with session management. (Ameya, Divya)
 #### 4. Basic Dashboard: 4 days
 Setting up a simple dashboard to display user profile information. (Ahmed, Clement)
 
-![Iteration1](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/4e4fe39a-07fb-47b2-a506-31d59dcb3d72)
+![Iteration1](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/2f0c2e56-e7ce-4b69-b202-56f192b6a17f)
 
 The Burndown Chart for iteration 1 will be updated regularly to show the actual work that has been done against the planned work.
 

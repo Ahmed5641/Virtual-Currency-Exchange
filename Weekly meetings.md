@@ -79,7 +79,7 @@ Ahmed, Ameya, Divya
 ### Day:
 Saturday
 ### Attendees:
-Ahmed, Ameya, Clement
+Ahmed, Divya, Clement
 ### Agenda:
 - We discussed the allocated tasks' progress with each team member.
 - We discussed the possibility of reducing the estimation times for each task.
@@ -89,4 +89,21 @@ Ahmed, Ameya, Clement
 ![04](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/f8ae9b8b-c92e-4252-bf30-a24a01a5c3a5)
 
 
+# Meeting 06:
+### Date:
+03/02/24
+### Time:
+06:00 pm
+### Day:
+Saturday
+### Attendees:
+Ahmed, Ameya, Clement, Divya
+### Agenda:
+- we fixed some issues related to the database storing function.
+- we discussed eliminating some UI features to give more time for fixing back-end code for the trading functionality.
+- we tracked the task plan for iteration 2 and what jobs were left behind.
+- we worked on creating the milestone 1.0 presentation.
+- We agreed on the next meeting time.
+
+![06](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/31118f53-4813-4d7d-aefb-d20437fcc1e6)
 
