@@ -5,47 +5,50 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dashboard</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-<style>
-  /* Basic styles for layout */
-  body { font-family: Arial, sans-serif; }
-  #bitcoin-price { font-weight: bold; margin-bottom: 20px; }
-  #chat { margin-bottom: 20px; }
-  #messages { list-style-type: none; padding: 0; }
-  #messages li { padding: 5px 10px; border-bottom: 1px solid #ddd; }
-  #message { padding: 10px; margin-right: 10px; width: 80%; }
-  #send { padding: 10px; }
-</style>
 </head>
 <body>
+  <div class="sidebar">
+    <a href="{{ url_for('chat_security_tokens') }}">Security Tokens</a>
+    <a href="{{ url_for('chat_privacy_coins') }}">Privacy Coins</a>
+    <a href="{{ url_for('chat_stablecoins') }}">Stablecoins (Niche or Regional)</a>
+    <a href="{{ url_for('chat_governance_tokens') }}">Governance Tokens</a>
+    <a href="{{ url_for('chat_nfts') }}">Non-Fungible Tokens (NFTs)</a>
+    <a href="{{ url_for('chat_layer_2_solutions') }}">Layer 2 Solutions</a>
+    <a href="{{ url_for('chat_community_and_meme_coins') }}">Community and Meme Coins</a>
+</div>
+
   <nav>
-    <a href="{{ url_for('dashboard') }}">Home</a>|
-    <a href="{{ url_for('profile') }}">My Profile</a>
+    <a href="{{ url_for('dashboard') }}">Home</a> |
+    <a href="{{ url_for('profile') }}">My Profile</a> |
+    <a href="{{ url_for('logout') }}">Logout</a>
   </nav>
   <div id="bitcoin-price">Bitcoin price: ${{ bitcoin_price }}</div>
-  <div id="chat">
+  <div id="chat-window">
     <ul id="messages">
       {% for message in messages %}
         <li><strong>{{ message.username }}</strong>: {{ message.text }}</li>
       {% endfor %}
     </ul>
+    <div id="chat-input">
+      <input type="text" id="message" autocomplete="off">
+      <button id="send" onclick="sendMessage()">Send</button>
+    </div>
   </div>
-  <input type="text" id="message" autocomplete="off">
-  <button id="send" onclick="sendMessage()">Send</button>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
   <script>
     var socket = io.connect('http://' + document.domain + ':' + location.port);
     socket.on('connect', function() {
-      socket.emit('my event', {data: 'User Connected'});
+      socket.emit('request_history'); // Request for the message history when the user connects
     });
-    var form = document.querySelector('form');
-    form.onsubmit = function(e) {
-      e.preventDefault();
+
+    function sendMessage() {
       var input = document.getElementById('message');
       var text = input.value;
       socket.emit('message', {text: text});
       input.value = '';
-    };
+    }
+
     socket.on('message', function(data) {
       var messages = document.getElementById('messages');
       var li = document.createElement('li');
@@ -53,8 +56,20 @@
       messages.appendChild(li);
       window.scrollTo(0, document.body.scrollHeight);
     });
+
+    // Handle incoming history
+    socket.on('history', function(history) {
+      var messages = document.getElementById('messages');
+      messages.innerHTML = ''; // Clear current messages
+      history.forEach(function(message) {
+        var li = document.createElement('li');
+        li.innerHTML = '<strong>' + message.username + '</strong>: ' + message.text;
+        messages.appendChild(li);
+      });
+    });
   </script>
 </body>
 </html>
+
 
 

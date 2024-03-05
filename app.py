@@ -95,8 +95,17 @@ def get_bitcoin_price():
     data = response.json()
     return data['bpi']['USD']['rate']
 
+
 @socketio.on('message')
 def handleMessage(data):
+    text = data['text']
+    # username is retrieved from the current_user context instead of the data payload
+    username = current_user.username
+    message = Message(text=text, user_id=current_user.id, username=username)
+    db.session.add(message)
+    db.session.commit()
+    send({'text': text, 'username': username}, broadcast=True)
+
     text = data['text']
     username = data['username']
     message = Message(text=text, user_id=current_user.id, username=username)
@@ -104,10 +113,58 @@ def handleMessage(data):
     db.session.commit()
     send({'text': text, 'username': username}, broadcast=True)
 
+
+@socketio.on('request_history')
+def handle_request_history():
+    # Query the last N messages from the database
+    last_messages = Message.query.order_by(Message.id.desc()).limit(50).all()
+    last_messages = list(reversed(last_messages))  # Reverse to display in correct order
+    # Emit the 'history' event to the client with these messages
+    emit('history', [{'username': m.username, 'text': m.text} for m in last_messages])
+
 if __name__ == '__main__':
     db.create_all()
-    socketio.run(app, debug=True)
 
 
+@app.route('/chat/security_tokens')
+@login_required
+def chat_security_tokens():
+    messages = Message.query.filter_by(room='security_tokens').all()
+    return render_template('chat_room.html', messages=messages, room_name='Security_tokens')
 
+@app.route('/chat/privacy_coins')
+@login_required
+def chat_privacy_coins():
+    messages = Message.query.filter_by(room='privacy_coins').all()
+    return render_template('chat_room.html', messages=messages, room_name='Privacy_coins')
 
+@app.route('/chat/stablecoins')
+@login_required
+def chat_stablecoins():
+    messages = Message.query.filter_by(room='stablecoins').all()
+    return render_template('chat_room.html', messages=messages, room_name='Stablecoins')
+
+@app.route('/chat/governance_tokens')
+@login_required
+def chat_governance_tokens():
+    messages = Message.query.filter_by(room='governance_tokens').all()
+    return render_template('chat_room.html', messages=messages, room_name='Governance_tokens')
+
+@app.route('/chat/nfts')
+@login_required
+def chat_nfts():
+    messages = Message.query.filter_by(room='nfts').all()
+    return render_template('chat_room.html', messages=messages, room_name='Nfts')
+
+@app.route('/chat/layer_2_solutions')
+@login_required
+def chat_layer_2_solutions():
+    messages = Message.query.filter_by(room='layer_2_solutions').all()
+    return render_template('chat_room.html', messages=messages, room_name='Layer_2_solutions')
+
+@app.route('/chat/community_and_meme_coins')
+@login_required
+def chat_community_and_meme_coins():
+    messages = Message.query.filter_by(room='community_and_meme_coins').all()
+    return render_template('chat_room.html', messages=messages, room_name='Community_and_meme_coins')
+socketio.run(app, debug=True)
