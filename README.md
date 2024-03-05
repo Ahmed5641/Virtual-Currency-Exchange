@@ -197,7 +197,7 @@ Users can buy virtual currencies at current market rates. This involves selectin
 #### 4. Selling Virtual Currencies: 8 days
 users can sell virtual currencies they own, based on current market rates. (Ahmed, Ameya)
 
-![Iteration2](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/987a1672-1cf5-40b0-ae0c-885d968f20de)
+![Iteration2](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/6946f98c-b9e7-4f65-a529-dd9f326f27a6)
 
 The Burndown Chart for iteration 2 will be updated regularly to show the actual work that has been done against the planned work.
 
