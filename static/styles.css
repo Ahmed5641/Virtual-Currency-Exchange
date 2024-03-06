@@ -74,4 +74,11 @@ nav a:hover {
   background-color: #4cae4c;
 }
 
+.chatBody {
+  background-image: url('images/Virtualcurrency.png');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
   
