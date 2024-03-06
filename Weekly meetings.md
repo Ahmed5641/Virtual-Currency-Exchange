@@ -107,3 +107,20 @@ Ahmed, Ameya, Clement, Divya
 
 ![06](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/31118f53-4813-4d7d-aefb-d20437fcc1e6)
 
+
+# Meeting 07:
+### Date:
+03/05/24
+### Time:
+08:30 pm
+### Day:
+Tuesday
+### Attendees:
+Ahmed, Ameya, Clement, Divya
+### Agenda:
+- we run a project demo.
+- we fixed some issues related to retrieving user info and background layout.
+- we checked and tracked project functionalities.
+- we finished working on the final version of the presentation.
+
+![07](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/0b41b418-131a-41b4-84a7-8e41f1f080cc)
