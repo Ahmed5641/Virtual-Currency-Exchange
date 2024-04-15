@@ -269,21 +269,27 @@ Assigned to: Clement, Divya
 ## User Communication Forum Features:
 #### 1. Design Database Schema for the Forum:
 Task: Designing a database schema to store forum posts, responses, and user metadata.
+
 Assigned to: Ahmed
 #### 2. Developing Backend for Forum Functionality:
 Task: Creating endpoints for posting, editing, deleting, and retrieving forum posts and comments.
+
 Assigned to: Ameya
 #### 3. Implementing User Authentication and Permissions:
 Task: Implementing access controls and permissions for different user actions in the forum (e.g., creating posts, replying to posts, deleting posts).
+
 Assigned to: Ameya
 #### 4. Frontend Development for the Forum:
 Task: Developing the user interface for the forum. This includes the layout for viewing threads, creating new posts, and commenting.
+
 Assigned to: Clement
 #### 5. Integration of Frontend and Backend:
 Task: Connecting the frontend UI with the backend services to ensure dynamic data fetching, posting, and management is seamless and efficient.
+
 Assigned to: Divya
 #### 6. Testing and Quality Assurance for Forum Features:
 Task: Conducting comprehensive testing across all forum features and system testing.
+
 Assigned to: Clement, Divya
 
 ![Iteration2](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/cd711474-cc1e-4568-9424-d05169a337dc)
