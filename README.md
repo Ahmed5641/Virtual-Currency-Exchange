@@ -226,18 +226,23 @@ Facilitate user interaction through a forum-like feature where users can post me
 ## Transaction History Features:
 #### 1. Design Database Schema for Transaction History:
 Task: Updating the existing database schema to include a new table for transactions with fields for transaction ID, user ID, currency type, amount, transaction type (buy/sell), and timestamp.
+
 Assigned to: Ahmed
 #### 2. Develop Backend API Endpoints:
 Task: Creating API endpoints to fetch transaction history for a user.
+
 Assigned to: Ameya
 #### 3. Implement Frontend Interface:
 Task: Designing and implementing a frontend interface that displays a list or table of transactions.
+
 Assigned to: Clement, Divya
 #### 4. Integration of Frontend and Backend:
 Task: Connecting the frontend interface with the backend API to retrieve and display the transaction history.
+
 Assigned to: Ahmed
 #### 5. Testing and Quality Assurance:
 Task: Writing and executing tests for both frontend and backend functionalities.
+
 Assigned to: Clement, Divya
 
 ## User Portfolio Management Features:
