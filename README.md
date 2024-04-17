@@ -300,7 +300,7 @@ Assigned to: Clement, Divya
 ![Milestone 2 0 Development](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/957aef91-1b00-4c73-bbf4-700a3ce62ce8)
 
 
-# The three most important things we learned about software development while working on our project:
+### The three most important things we learned about software development while working on our project:
 
 1) Adaptation and quickly responding to changing requirements and emerging problems is a key to success. Applying the Agile Scrum methodology helped us in managing these changes effectively.
 2) The effective communication and collaboration within the team were paramount to the success of our project. Regular meetings, clear documentation, and open channels of feedback ensured that everyone was aligned and informed.
