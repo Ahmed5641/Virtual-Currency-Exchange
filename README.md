@@ -295,6 +295,13 @@ Assigned to: Clement, Divya
 ![Iteration2](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/cd711474-cc1e-4568-9424-d05169a337dc)
 
 
+# Milestone 2.0 Development
+
+![Milestone 2 0 Development](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/957aef91-1b00-4c73-bbf4-700a3ce62ce8)
+
+
+
+
 
 
 
