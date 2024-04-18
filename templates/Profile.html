@@ -1,17 +1,107 @@
-<!-- profile.html -->
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>{{ current_user.username }}'s Profile</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <style>
+    /* Sidebar styles */
+    .sidebar {
+      background-color: #333;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      padding: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #555;
+    }
+
+    /* Page-specific styles */
+    .container {
+      max-width: 80%;
+      margin: 2rem auto;
+      margin-left: 250px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .profile-form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
+
 <body>
+  <div class="sidebar">
+    <a href="{{ url_for('index') }}">Home</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/portfolio">Portfolio</a>
+    <a href="/buy">Buy</a>
+    <a href="/sell">Sell</a>
+    <a href="/history">History</a>
+    <a href="/profile">Profile</a>
+    <a href="/logout">Logout</a>
+  </div>
+
+  <div class="container">
     <h1>{{ current_user.username }}'s Profile</h1>
-    <form action="" method="POST">
+
+    <div class="profile-form">
+      <form action="" method="POST">
         <label for="profile_desc">Profile Description:</label>
         <textarea id="profile_desc" name="profile_desc">{{ current_user.profile_desc }}</textarea>
         <input type="submit" value="Update Profile">
-    </form>
-    <a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
+{% endblock %}

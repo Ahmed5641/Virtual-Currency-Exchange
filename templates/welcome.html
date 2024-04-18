@@ -12,11 +12,17 @@
       background-size: cover;
       background-position: center;
   }
+  #buttons, h1 {
+    text-align: center;
+  }
+  
 </style>
 </head>
 <body>
   <h1>Welcome to Crypto Chat!</h1>
-  <a href="{{ url_for('login') }}">Login</a> or
-  <a href="{{ url_for('register') }}">Register</a>
+  <div id="buttons">
+    <a href="{{ url_for('login') }}">Login</a> or
+    <a href="{{ url_for('register') }}">Register</a>
+  </div>
 </body>
 </html>

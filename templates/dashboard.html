@@ -1,73 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-<body class="chatBody">
-  <div class="sidebar">
-    <a href="{{ url_for('chat_security_tokens') }}">Security Tokens</a>
-    <a href="{{ url_for('chat_privacy_coins') }}">Privacy Coins</a>
-    <a href="{{ url_for('chat_stablecoins') }}">Stablecoins (Niche or Regional)</a>
-    <a href="{{ url_for('chat_governance_tokens') }}">Governance Tokens</a>
-    <a href="{{ url_for('chat_nfts') }}">Non-Fungible Tokens (NFTs)</a>
-    <a href="{{ url_for('chat_layer_2_solutions') }}">Layer 2 Solutions</a>
-    <a href="{{ url_for('chat_community_and_meme_coins') }}">Community and Meme Coins</a>
-</div>
-
-  <nav>
-    <a href="{{ url_for('dashboard') }}">Home</a> |
-    <a href="{{ url_for('profile') }}">My Profile</a> |
-    <a href="{{ url_for('logout') }}">Logout</a>
-  </nav>
-  <div id="bitcoin-price">Bitcoin price: ${{ bitcoin_price }}</div>
-  <div id="chat-window">
-    <ul id="messages">
-      {% for message in messages %}
-        <li><strong>{{ message.username }}</strong>: {{ message.text }}</li>
-      {% endfor %}
-    </ul>
-    <div id="chat-input">
-      <input type="text" id="message" autocomplete="off">
-      <button id="send" onclick="sendMessage()">Send</button>
+<body>
+    <div class="sidebar">
+        <a href="{{ url_for('chat_room', room='security_tokens') }}"><i class="fas fa-shield-alt"></i> Security Tokens</a>
+        <a href="{{ url_for('chat_room', room='privacy_coins') }}"><i class="fas fa-user-secret"></i> Privacy Coins</a>
+        <a href="{{ url_for('chat_room', room='stablecoins') }}"><i class="fas fa-money-bill-wave"></i> Stablecoins</a>
+        <a href="{{ url_for('chat_room', room='governance_tokens') }}"><i class="fas fa-balance-scale"></i> Governance Tokens</a>
+        <a href="{{ url_for('chat_room', room='nfts') }}"><i class="fas fa-image"></i> NFTs</a>
+        <a href="{{ url_for('chat_room', room='layer_2_solutions') }}"><i class="fas fa-layer-group"></i> Layer 2 Solutions</a>
+        <a href="{{ url_for('chat_room', room='community_and_meme_coins') }}"><i class="fas fa-users"></i> Community & Meme Coins</a>
     </div>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
-  <script>
-    var socket = io.connect('http://' + document.domain + ':' + location.port);
-    socket.on('connect', function() {
-      socket.emit('request_history'); // Request for the message history when the user connects
-    });
-
-    function sendMessage() {
-      var input = document.getElementById('message');
-      var text = input.value;
-      socket.emit('message', {text: text});
-      input.value = '';
-    }
-
-    socket.on('message', function(data) {
-      var messages = document.getElementById('messages');
-      var li = document.createElement('li');
-      li.innerHTML = '<strong>' + data.username + '</strong>: ' + data.text;
-      messages.appendChild(li);
-      window.scrollTo(0, document.body.scrollHeight);
-    });
-
-    // Handle incoming history
-    socket.on('history', function(history) {
-      var messages = document.getElementById('messages');
-      messages.innerHTML = ''; // Clear current messages
-      history.forEach(function(message) {
-        var li = document.createElement('li');
-        li.innerHTML = '<strong>' + message.username + '</strong>: ' + message.text;
-        messages.appendChild(li);
-      });
-    });
-  </script>
+    <div class="container">
+        <nav>
+            <a href="{{ url_for('dashboard') }}">Home</a>
+            <a href="{{ url_for('profile') }}">My Profile</a>
+            <a href="{{ url_for('logout') }}">Logout</a>
+        </nav>
+        <h1>Cryptocurrency Prices</h1>
+        <div class="dashboard-content">
+            {% for crypto in cryptos %}
+            <div class="crypto-price">
+                <a href="{{ crypto.whitepaper_url }}" target="_blank">
+                    <img src="{{ url_for('static', filename='images/' + crypto.symbol.lower() + '.png') }}" alt="{{ crypto.name }}" class="crypto-icon">
+                    <h2>{{ crypto.name }} ({{ crypto.symbol }})</h2>
+                    {% if crypto.price %}
+                        <p class="price">${{ crypto.price }}</p>
+                        {% if crypto.change is not none %}
+                            <p class="change {{ 'positive' if crypto.change >= 0 else 'negative' }}">{{ crypto.change }}%</p>
+                        {% else %}
+                            <p class="change">Change data not available</p>
+                        {% endif %}
+                    {% else %}
+                        <p class="price">Upgrade API for more data</p>
+                    {% endif %}
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+        <p class="last-updated">Last Updated: {{ last_updated }}</p>
+    </div>
 </body>
 </html>
 

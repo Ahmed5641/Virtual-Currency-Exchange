@@ -1,0 +1,112 @@
+{% block title %}Buy{% endblock %}
+
+{% block content %}
+<style>
+  /* Sidebar styles */
+  .sidebar {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .sidebar a:hover {
+    background-color: #555;
+  }
+
+  /* Page-specific styles */
+  .container {
+    max-width: 80%;
+    margin: 2rem auto;
+    margin-left: 250px;
+  }
+
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  select, input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .gag-message {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #777;
+  }
+</style>
+
+<div class="sidebar">
+  <a href="{{ url_for('index') }}">Home</a>
+  <a href="/dashboard">Dashboard</a>
+  <a href="/portfolio">Portfolio</a>
+  <a href="/buy">Buy</a>
+  <a href="/sell">Sell</a>
+  <a href="/history">History</a>
+  <a href="/profile">Profile</a>
+  <a href="/logout">Logout</a>
+</div>
+
+<div class="container">
+  <h1>Buy Virtual Currency</h1>
+  <form action="https://www.coinbase.com/buy" target="_blank">
+    <label for="currency">Currency:</label>
+    <select id="currency" name="currency">
+      <option value="BTC">Bitcoin (BTC)</option>
+      <option value="ETH">Ethereum (ETH)</option>
+      <option value="LTC">Litecoin (LTC)</option>
+      <option value="XRP">Ripple (XRP)</option>
+      <option value="BCH">Bitcoin Cash (BCH)</option>
+    </select>
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" name="amount" step="0.01" required>
+    <button type="submit">Buy</button>
+  </form>
+  <p class="gag-message"></p>
+</div>
+{% endblock %}

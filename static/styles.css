@@ -1,84 +1,583 @@
-/* Existing styles */
-body {
-  font-family: Arial, sans-serif;
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+/* Apply font family */
+body, h1, h2, p, a {
+  font-family: 'Open Sans', sans-serif;
 }
 
+/* Refine color scheme */
+body {
+  background-color: #f4f7fa; /* Light grey background */
+  color: #333; /* Dark grey font for better readability */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply subtle background gradient */
+body {
+  background: linear-gradient(to right bottom, #eef2f3, #8e9eab); /* Soft gradient */
+}
+
+.sidebar {
+  background: #2c3e50;
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  color: #ecf0f1;
+}
+
+.sidebar a {
+  color: #ecf0f1; /* Soft white color for text */
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.sidebar a:hover, .sidebar a:focus {
+  background-color: #34495e;
+  color: #ffffff;
+}
+
+.sidebar i {
+  margin-right: 10px;
+}
+
+/* Cards */
+.crypto-price {
+  border: none; /* Remove borders */
+  background-color: #ffffff; /* Pure white background */
+  color: #333; /* Uniform text color */
+  margin-bottom: 20px;
+  border-radius: 10px; /* Rounded corners for the cards */
+  overflow: hidden; /* Ensure nothing spills out of card corners */
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Reduce the margins and padding around the crypto cards */
+.crypto-price {
+  margin: 10px;
+  padding: 15px;
+}
+
+.crypto-price h2 {
+  font-weight: 600; /* Slightly bolder font for titles */
+  margin-bottom: 5px;
+  font-size: 1.2rem; /* Slightly smaller font size */
+}
+
+.crypto-price p {
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 1rem; /* Slightly smaller font size */
+}
+
+/* Hover effect on cards */
+.crypto-price:hover {
+  background-color: #ecf0f1; /* Light hover effect */
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.crypto-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.change {
+  font-size: 16px;
+}
+
+.positive {
+  color: #27ae60;
+}
+
+.negative {
+  color: #c0392b;
+}
+
+/* Responsive Grid */
+@media (max-width: 1200px) {
+  .dashboard-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-gap: 20px;
+    align-items: start;
+    justify-content: center;
+    margin-left: 250px;
+    padding-top: 60px;
+  }
+}
+
+/* Responsive sidebar */
+@media (max-width: 992px) {
+  .sidebar {
+    width: 200px; /* Smaller sidebar on smaller screens */
+  }
+
+  .container {
+    padding: 60px 20px;
+    margin-left: 250px;
+    margin-top: 50px;
+  }
+}
+
+/* More responsiveness for mobile */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative; /* Sidebar on top on mobile */
+    min-height: auto;
+    text-align: center;
+  }
+
+  .container {
+    margin-left: 0;
+  }
+
+  .dashboard-content {
+    grid-template-columns: 1fr; /* Stack cards on mobile */
+  }
+}
+
+/* Update nav and sidebar styles */
+nav {
+  background-color: #34495e; /* Match with sidebar for consistency */
+  color: #ffffff; /* Same text color as sidebar for uniformity */
+  height: 50px;
+  line-height: 50px;
+  width: calc(100% - 290px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 250px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover, nav a:focus {
+  color: #1abc9c;
+}
+
+/* Last updated text */
+.last-updated {
+  font-size: 0.9rem;
+  padding: 10px 0;
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1570px;
+  margin: 0 auto;
+  padding: 20px;
+  width: calc(100% - 250px); /* Account for sidebar */
+  margin-left: 250px;
+  height: 100vh;
+}
+
+/* Navigation */
 nav {
   background-color: #333;
   color: white;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  padding: 0 10px;
+  margin-right: 10px;
+  font-size: 18px;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #ffcc00;
 }
 
-#bitcoin-price {
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 36px;
+  color: #333;
+}
+
+/* Fine-tune the dashboard content grid */
+.dashboard-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsive cards with less whitespace */
+  grid-gap: 15px; /* Reduced gap between cards */
+  align-items: start; /* Align items to the start for a uniform top line */
+  justify-content: center; /* Center the items in the container */
+  padding: 20px;
+  margin-left: 250px; /* Same as the width of the sidebar */
+}
+
+.crypto-price {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.crypto-price:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.crypto-price a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.crypto-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.crypto-name {
+  font-size: 24px;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.change {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.change.positive {
+  color: green;
+}
+
+.change.negative {
+  color: red;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+  
+  .dashboard-content {
+    margin-left: 0;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 700px) {
+  .dashboard-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container {
+    margin-left: 0;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .dashboard-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card Styles */
+.dashboard-content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.crypto-price {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.crypto-price:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar styles */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 50px;
+  background: #555;
+  color: white;
+}
+
+/* Enhance the look of the navigation bar */
+nav {
+  background-color: #34495e; /* Dark shade */
+  color: #ecf0f1; /* Light text color */
+  padding: 10px 20px; /* Adjust padding */
+}
+
+/* Modify nav link spacing */
+nav a {
+  margin: 0 10px; /* Reduce space between links */
+  color: white;
+  padding: 0 15px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #777;
+}
+
+/* Typography and spacing */
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  padding: 40px 0 10px 0;
+  font-weight: 300;
+  text-align: center;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.change {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
+.last-updated {
+  text-align: center;
+  color: #555;
+  margin-top: 20px;
+  font-size: 0.8rem;
+}
+
+/* Forms */
+form {
   margin-bottom: 20px;
 }
 
-/* Styles for chat area */
-#chat-window {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
   width: 100%;
-  background: #f9f9f9;
   padding: 10px;
-  box-shadow: 0 -1px 5px rgba(0,0,0,0.2);
-}
-
-#messages {
-  max-height: 300px;
-  overflow-y: auto;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-#messages li {
-  padding: 5px 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-#chat-input {
-  display: flex;
-  margin-top: 10px;
-}
-
-#message {
-  flex: 1;
-  padding: 10px;
-  margin-right: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
 }
 
-#send {
+button {
+  background-color: #4CAF50;
+  color: white;
   padding: 10px 20px;
-  background-color: #5cb85c;
   border: none;
   border-radius: 4px;
-  color: white;
   cursor: pointer;
 }
 
-#send:hover {
-  background-color: #4cae4c;
+button:hover {
+  background-color: #45a049;
 }
 
-.chatBody {
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Chat */
+#messages {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.message {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.message-content {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.timestamp {
+  color: #777;
+  font-size: 12px;
+}
+
+#chat-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#send-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#send-button:hover {
+  background-color: #45a049;
+}
+
+/* Adjust sidebar padding */
+.sidebar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Adjust the sidebar link sizes for less space consumption */
+.sidebar a {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* Further reduce the margin for mobile views */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .dashboard-content {
+    grid-gap: 10px; /* Even smaller gap for mobile */
+  }
+}
+
+/* Subtle shadow for cards for depth */
+.crypto-price {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* Soft shadow */
+}
+
+/* Adjust font size for a cleaner look */
+.crypto-price h2 {
+  font-size: 1.2rem; /* Slightly smaller font size */
+}
+
+.crypto-price p {
+  font-size: 1rem; /* Slightly smaller font size */
+}
+
+/* Responsive cards */
+@media screen and (max-width: 1200px) {
+  .dashboard-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Enhanced card hover effect */
+.crypto-price:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Deeper shadow on hover */
+  transform: scale(1.02); /* Slight scale for emphasis */
+}
+
+/* Styling last updated text */
+.last-updated {
+  font-size: 0.9rem; /* Slightly smaller text */
+  color: #2c3e50; /* Dark text color for better visibility */
+}
+
+/* .chatBody {
   background-image: url('images/Virtualcurrency.png');
   height: 100vh;
   background-size: cover;
   background-position: center;
-}
-
-  
+} */

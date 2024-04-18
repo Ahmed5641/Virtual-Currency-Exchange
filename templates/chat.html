@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Chat{% endblock %}
+
+{% block content %}
+    <h1>Chat</h1>
+    <div id="chat-messages"></div>
+    <form id="chat-form">
+        <input type="text" id="chat-input" placeholder="Type your message...">
+        <button type="submit">Send</button>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.js"></script>
+    <script>
+        var socket = io();
+
+        socket.on('message', function(data) {
+            var messageElement = document.createElement('div');
+            messageElement.innerHTML = '<strong>' + data.username + ':</strong> ' + data.message;
+            document.getElementById('chat-messages').appendChild(messageElement);
+        });
+
+        document.getElementById('chat-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var message = document.getElementById('chat-input').value;
+            socket.emit('message', { message: message });
+            document.getElementById('chat-input').value = '';
+        });
+    </script>
+{% endblock %}

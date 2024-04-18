@@ -1,0 +1,128 @@
+{% block title %}Portfolio{% endblock %}
+
+{% block content %}
+<style>
+  /* Sidebar styles */
+  .sidebar {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .sidebar a:hover {
+    background-color: #555;
+  }
+
+  /* Page-specific styles */
+  .container {
+    max-width: 80%;
+    margin: 2rem auto;
+    margin-left: 250px;
+  }
+
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ccc;
+  }
+
+  th {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #777;
+  }
+</style>
+
+<div class="sidebar">
+  <a href="{{ url_for('index') }}">Home</a>
+  <a href="/dashboard">Dashboard</a>
+  <a href="/portfolio">Portfolio</a>
+  <a href="/buy">Buy</a>
+  <a href="/sell">Sell</a>
+  <a href="/history">History</a>
+  <a href="/profile">Profile</a>
+  <a href="/logout">Logout</a>
+</div>
+
+<div class="container">
+  <h1>Portfolio</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Currency</th>
+        <th>Amount</th>
+        <th>Value (USD)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bitcoin</td>
+        <td>1.5</td>
+        <td>97500</td>
+      </tr>
+      <tr>
+        <td>Ethereum</td>
+        <td>10</td>
+        <td>40000</td>
+      </tr>
+      <tr>
+        <td>Litecoin</td>
+        <td>50</td>
+        <td>10000</td>
+      </tr>
+      <tr>
+        <td>Ripple</td>
+        <td>1000</td>
+        <td>5000</td>
+      </tr>
+      <tr>
+        <td>Bitcoin Cash</td>
+        <td>5</td>
+        <td>3000</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+
+  </div>
+</div>
+{% endblock %}
