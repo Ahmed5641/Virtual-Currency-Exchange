@@ -120,7 +120,7 @@ Ahmed, Ameya, Clement, Divya
 ### Agenda:
 - We created a milestone 2.0 plan.
 - We ran a project demo.
-- We finished milestone 1.0 presentation file and documentation.
+- We finished the milestone 1.0 presentation file and documentation.
 
 ![07](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/1bf3df3f-832f-4a08-9466-172a8e6131e5)
 
@@ -141,3 +141,75 @@ Ahmed, Ameya, Clement, Divya
 - We switched some task allocation.
 
 ![08](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/1f3bdcbd-793f-4378-957f-04050c3f6893)
+
+
+# Meeting 09:
+### Date:
+04/07/24
+### Time:
+06:00 pm
+### Day:
+Sunday
+### Attendees:
+Ahmed, Ameya, Clement, Divya
+### Agenda:
+- We finished all iteration 1.0 tasks and updated the iteration 1.0 burndown chart.
+- We discussed the iteration 2.0 plan and tasks.
+- We ran a brief project demo.
+
+![09](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/3d7dfe77-d571-4571-a1cd-e4becdc05370)
+
+
+# Meeting 10:
+### Date:
+04/10/24
+### Time:
+07:30 pm
+### Day:
+Wednesday
+### Attendees:
+Ahmed, Ameya, Clement
+### Agenda:
+- We discussed the iteration 2.0 progression.
+- We cut and changed some tasks (Users' direct messages and forum into user chatting functionality).
+- We updated the iteration 2.0 burndown chart.
+
+![10](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/6888ea53-53f2-4b97-9707-05713d9dcfe8)
+
+
+# Meeting 11:
+### Date:
+04/13/24
+### Time:
+07:00 pm
+### Day:
+Saturday
+### Attendees:
+Ahmed, Ameya
+### Agenda:
+- We ran a project demo.
+- We created the milestone 2.0 presentation file.
+- We prepared the final delivery.
+
+![11](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/e51f4f35-5c35-45a7-a8cb-cd807143b262)
+
+
+# Meeting 12:
+### Date:
+04/15/24
+### Time:
+07:00 pm
+### Day:
+Monday
+### Attendees:
+Ahmed, Ameya, Clement, Divya
+### Agenda:
+- We ran a project demo.
+- We updated the iteration 2.0 burndown chart.
+- We worked on the final version of the presentation.
+- We prepared to finalize everything before submission.
+
+![12](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/c60b62f2-50a2-4c6f-a2e7-f01aae8c1318)
+
+
+
