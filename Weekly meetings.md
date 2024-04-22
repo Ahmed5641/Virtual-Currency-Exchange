@@ -107,3 +107,37 @@ Ahmed, Ameya, Clement, Divya
 
 ![06](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/31118f53-4813-4d7d-aefb-d20437fcc1e6)
 
+
+# Meeting 07:
+### Date:
+03/05/24
+### Time:
+09:00 pm
+### Day:
+Tuesday
+### Attendees:
+Ahmed, Ameya, Clement, Divya
+### Agenda:
+- We created a milestone 2.0 plan.
+- We ran a project demo.
+- We finished milestone 1.0 presentation file and documentation.
+
+![07](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/1bf3df3f-832f-4a08-9466-172a8e6131e5)
+
+
+# Meeting 08:
+### Date:
+03/20/24
+### Time:
+09:00 pm
+### Day:
+Wednesday
+### Attendees:
+Ahmed, Ameya, Clement, Divya
+### Agenda:
+- We continued working on milestone 2.0 tasks.
+- We discussed iteration 1.0 progression.
+- We updated the iteration 1.0 burndown chart.
+- We switched some task allocation.
+
+![08](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/1f3bdcbd-793f-4378-957f-04050c3f6893)
