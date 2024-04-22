@@ -252,6 +252,25 @@ On (60% velocity) Days of actual work: 4 (Four Team Members) * 18 * 0.60 = 43 Da
 The Burndown Charts had been updated regularly to show the actual work that has been done against the planned work.
 
 
+## How to run the program:
+
+To run the program, you have to run the below command in the command prompt:
+
+##### Python App.py 
+
+![Run](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/ff8fdecf-b0a1-4075-83d0-031678a007f5)
+
+
+
+
+## The three most important things you learned about software development working on your project:
+
+1. The most important lesson we learned in this class is the successful implementation of agile Scrum methodology that facilitated the software development process.
+
+2. The software development process is long and dynamic, So team collaboration and effective adaptation helped us to mitigate unforeseen challenges and evolving requirements.
+
+3. Planning is important but better planning is everything. The more iterations we planned the better estimations we achieved. Better task planning helped us to mitigate tasks delay and prevent backlogs.
+
 
 
 
