@@ -222,24 +222,26 @@ Duration: 23 days.
 On (60% velocity) Days of actual work: 4 (Four Team Members) * 23 * 0.60 = 55 Days
 
 
-### Iteration 2: User communication and forum
+### Iteration 2: User communications
 Duration: 18 days.
 On (60% velocity) Days of actual work: 4 (Four Team Members) * 18 * 0.60 = 43 Days
 
 # Milestone 2.0 Tasks Allocations:
 
-1. Design the database schema to store transaction details.
-2. Develop backend API endpoints to fetch transaction data.
-3. Implement authentication and authorization checks to ensure users can only access their transaction history.
-4. Create a frontend interface to display the transaction history in a user-friendly manner.
-5. Integrate frontend with backend services to retrieve and display data.
-6. Write tests for backend logic and frontend integration.
-7. Design and update the database schema to manage user portfolio data, including currency types and quantities.
-8. Develop backend services to calculate the current values of holdings based on live market rates.
-9. Create frontend components for displaying portfolio information.
-10. Provide functionality for users to update their portfolio (add/remove currencies).
-11. Write comprehensive tests for all new functionality.
-12. Frontend and backend Development for chatting and communications between users.
+1. Design the database schema to store transaction details. (Ahmed)
+2. Develop backend API endpoints to fetch transaction data. (Ameya)
+3. Implement authentication and authorization checks to ensure users can only access their transaction history. (Clemen, Divya)
+4. Create a frontend interface to display the transaction history in a user-friendly manner. (Ahmed)
+5. Integrate frontend with backend services to retrieve and display data. (Ameya)
+6. Write tests for backend logic and frontend integration. (Ameya)
+7. Design and update the database schema to manage user portfolio data, including currency types and quantities. (Ahmed)
+8. Develop backend services to calculate the current values of holdings based on live market rates. (Ameya)
+9. Create frontend components for displaying portfolio information. (Clemen, Divya)
+10. Provide functionality for users to update their portfolio (add/remove currencies). (Ameya)
+11. Write comprehensive tests for all new functionality. (Ameya)
+12. Frontend and backend Development for chatting and communications between users. (Ameya)
+
+![Milestone 2 0 Development333](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/229d55f6-a1db-4676-927d-528b47d9d79e)
 
 # Milestone 2.0 Burndown Charts:
 
