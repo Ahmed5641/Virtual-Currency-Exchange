@@ -107,6 +107,7 @@ Ahmed, Ameya, Clement, Divya
 
 ![06](https://github.com/Ahmed5641/Virtual-Currency-Exchange/assets/157667926/31118f53-4813-4d7d-aefb-d20437fcc1e6)
 
+<<<<<<< HEAD
 
 # Meeting 07:
 ### Date:
@@ -213,3 +214,5 @@ Ahmed, Ameya, Clement, Divya
 
 
 
+=======
+>>>>>>> b828e01 (Initial commit of project files to ai_dev)

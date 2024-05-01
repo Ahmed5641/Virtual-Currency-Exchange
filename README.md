@@ -202,6 +202,7 @@ users can sell virtual currencies they own, based on current market rates. (Ahme
 The Burndown Chart for iteration 2 will be updated regularly to show the actual work that has been done against the planned work.
 
 
+<<<<<<< HEAD
 # Milestone 2.0 Features:
 ### 1. Transaction History:
 Enable users to view the history of their transactions, including dates, amounts, and other relevant details.
@@ -273,6 +274,8 @@ To run the program, you have to run the below command in the command prompt:
 
 
 
+=======
+>>>>>>> b828e01 (Initial commit of project files to ai_dev)
 
 
 
