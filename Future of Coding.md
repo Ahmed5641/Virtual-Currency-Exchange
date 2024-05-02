@@ -1,6 +1,6 @@
 # Future of Coding Assignment 
 
-### Which tools and model(s) you used:
+### Which tools and model you used:
 
 #### general conversational assistant:
 - ChatGPT
