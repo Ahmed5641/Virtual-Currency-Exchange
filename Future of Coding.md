@@ -4,7 +4,7 @@
 
 #### general conversational assistant:
 - ChatGPT
-#### coding-specific assistant
+#### coding-specific assistant:
 - Claude AI
 
 ### Which areas the tools struggled with and excelled at:
