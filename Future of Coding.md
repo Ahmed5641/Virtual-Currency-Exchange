@@ -16,7 +16,7 @@ Claude: performed well when asked to refactor and enhance specific code.
 The main comparison is that ChatGPT can't code without proper context while Claude-AI a programming-specific assistant can.
 Claude-AI successfully refactored the code to enhance performance by reducing unnecessary operations.
 
-### recommendations for fellow students/developers on how to get the most out of the tools:
+### Recommendations for fellow students/developers on how to get the most out of the tools:
 
 AI tools can be very helpful tools to reduce your time and effort in solving problems but it is better to use them as a learning tool without neglecting the human touch and judgment because these tools don't always produce perfect solutions.
 
