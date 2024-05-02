@@ -3,9 +3,9 @@
 ### Which tools and model(s) you used:
 
 #### general conversational assistant:
-ChatGPT
+- ChatGPT
 #### coding-specific assistant
-Claude AI
+- Claude AI
 
 ### Which areas the tools struggled with and excelled at:
 ChatGPT: Good at answering general questions and summarising with information search however, not efficient with specific code refactoring. 
